@@ -9,7 +9,16 @@ One time for the PC
 Each time for each project
 =====================================================================================================
 
-1. Terminal Command Heroku create 
-2. git add . and commit 
+1. Terminal Command heroku create 
+2. git add . commit and push to my own git repository
 3. git push heroku main 
+4. visit dashboard > project > settings > Reveal config vars 
+5. copy and paste .env file key and values. 
+6. Ensure mongodb atlas database network settings for all ip address 
+
+###### Note : Ensure to run the below 4 commands after a single change 
+------------------------------------------------------------------
+git add . commit and push to my own git repository and then git push heroku main
+
+
  */

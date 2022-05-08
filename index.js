@@ -113,6 +113,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('Genius Car Server is running')
 });
+app.get('/hero', (req, res) => {
+    res.send('New test heroku API is running')
+});
 
 app.listen(port, () => {
     console.log(`Genius Car Server is running at port : ${port}`);
