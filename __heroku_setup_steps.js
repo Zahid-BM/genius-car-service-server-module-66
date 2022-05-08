@@ -8,7 +8,6 @@ One time for the PC
 =====================================================================================================
 Each time for each project
 =====================================================================================================
-
 1. Terminal Command heroku create 
 2. git add . commit and push to my own git repository
 3. git push heroku main 
@@ -20,5 +19,8 @@ Each time for each project
 ------------------------------------------------------------------
 git add . commit and push to my own git repository and then git push heroku main
 
-
+***************Connect heroku server with client by running below code in client side****************
+1. replace localhost URL with heroku project URL using CTRL+SHIFT+F in everywhere. 
+2. npm run build
+3.firebase deploy
  */
