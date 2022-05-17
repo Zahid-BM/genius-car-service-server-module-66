@@ -92,7 +92,7 @@ async function run() {
             const decodedEmail = req.decoded.email;
             const email = req.query.email;
             if (email === decodedEmail) {
-                const query = { email };
+                const query = { email: email };
                 const cursor = orderCollection.find(query);
                 const orders = await cursor.toArray();
                 res.send(orders);
@@ -100,7 +100,7 @@ async function run() {
             else {
                 res.status(403).send({ message: 'Forbidden Access' });
             }
-        })
+        });
 
     }
     finally {
